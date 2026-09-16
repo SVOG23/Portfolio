@@ -1,19 +1,19 @@
 # GitHub Showcase: Suraj Vaghela
 
-A static portfolio site that walks recruiters through five projects without making the
+A static portfolio site that walks recruiters through four projects without making the
 underlying repositories public. Plain HTML, CSS and JavaScript: no framework, no build step,
 no dependencies.
 
 Live at **https://svog23.github.io/GithubShowcase/**
 
-**Projects covered:** Vouchlist · ModelMarketplace · unrot · Clipr.AI · Kivo
+**Projects covered:** Vouchlist · ModelMarketplace · unrot · Kivo
 
 ## Design
 
 Written for how recruiters actually read a portfolio: they scan for a few seconds, they are
 often not engineers, and they want to know what a thing does before how it was made.
 
-- **Project index in the hero.** All five projects (name, one line, status) sit on the first
+- **Project index in the hero.** All four projects (name, one line, status) sit on the first
   screen, so the page reads as project-first without any scrolling.
 - **Case-study blocks.** Each project is a short write-up plus a two-column panel: the problem
   on one side, what came of it on the other. Amber marks the problem, cyan the outcome, so
