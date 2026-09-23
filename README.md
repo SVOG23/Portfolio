@@ -1,10 +1,10 @@
-# GitHub Showcase: Suraj Vaghela
+# Portfolio: Suraj Vaghela
 
 A static portfolio site that walks recruiters through four projects without making the
 underlying repositories public. Plain HTML, CSS and JavaScript: no framework, no build step,
 no dependencies.
 
-Live at **https://svog23.github.io/GithubShowcase/**
+Live at **https://svog23.github.io/portfolio/**
 
 **Projects covered:** Vouchlist · ModelMarketplace · unrot · Kivo
 
