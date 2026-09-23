@@ -4,7 +4,7 @@ A static portfolio site that walks recruiters through four projects without maki
 underlying repositories public. Plain HTML, CSS and JavaScript: no framework, no build step,
 no dependencies.
 
-Live at **https://svog23.github.io/portfolio/**
+Live at **https://svog23.github.io/Portfolio/**
 
 **Projects covered:** Vouchlist · ModelMarketplace · unrot · Kivo
 
