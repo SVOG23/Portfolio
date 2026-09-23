@@ -174,6 +174,15 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 /* ── hero ───────────────────────────────────────────────── */
 .hero { padding: 54px 0 78px; }
 
+/* Portrait sits right of the headline on wide screens and above it on
+   phones, so a face is on the first screen either way. */
+.hero-intro {
+  display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 56px;
+  align-items: center;
+}
+.hero-portrait { grid-column: 2; grid-row: 1; }
+.hero-copy { grid-column: 1; grid-row: 1; min-width: 0; }
+
 .hero-eyebrow {
   font-family: var(--mono); font-size: 12px; letter-spacing: .14em;
   text-transform: uppercase; color: var(--dim); margin-bottom: 22px;
@@ -254,16 +263,9 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 .section-sub { margin-top: 16px; color: var(--bone-2); font-size: .97rem; max-width: 56ch; }
 
 /* ── about ──────────────────────────────────────────────── */
-.about-grid { display: grid; grid-template-columns: 300px 1fr; gap: 52px; align-items: start; }
+.about-grid { display: grid; grid-template-columns: 1fr; }
 
-/* Sticky positioning and a transform must not land on the same element: the
-   reveal animation would tween the very offset sticky is recomputing each
-   frame, which reads as jitter while the page smooth-scrolls to #about.
-   The wrapper does the sticking; the figure inside does the animating, and it
-   fades without moving so a pinned element never appears to drift. */
-.portrait-sticky { position: sticky; top: 96px; }
 .portrait { margin: 0; }
-.portrait.reveal { transform: none; }
 .portrait-frame {
   position: relative; aspect-ratio: 1; width: 100%;
   border: 1px solid var(--rule-2); border-radius: var(--r);
@@ -499,7 +501,7 @@ body.is-ready .hero-rule { transform: scaleX(1); }
 
 /* ── responsive ─────────────────────────────────────────── */
 @media (max-width: 1000px) {
-  .about-grid { grid-template-columns: 220px 1fr; gap: 34px; }
+  .hero-intro { grid-template-columns: minmax(0, 1fr) 220px; gap: 36px; }
   .hero-grid { grid-template-columns: 1fr; gap: 16px; }
   .index a { grid-template-columns: minmax(0, 170px) minmax(0, 1fr); }
   .index-status { grid-column: 1 / -1; }
@@ -511,9 +513,9 @@ body.is-ready .hero-rule { transform: scaleX(1); }
   .nav-resume { padding: 7px 11px; font-size: 11.8px; }
   .hero { padding: 64px 0 60px; }
   .section { padding: 60px 0; }
-  .about-grid { grid-template-columns: 1fr; gap: 30px; }
-  .portrait-sticky { position: static; }
-  .portrait { max-width: 230px; }
+  .hero-intro { grid-template-columns: 1fr; gap: 24px; }
+  .hero-portrait, .hero-copy { grid-column: 1; grid-row: auto; }
+  .hero-portrait { width: 132px; }
   .role { grid-template-columns: 1fr; gap: 12px; }
   .role-date { padding-top: 0; }
   .case-head { display: none; }
