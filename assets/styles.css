@@ -263,7 +263,11 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 .section-sub { margin-top: 16px; color: var(--bone-2); font-size: .97rem; max-width: 56ch; }
 
 /* ── about ──────────────────────────────────────────────── */
-.about-grid { display: grid; grid-template-columns: 1fr; }
+/* Copy on the left, education and certification cards stacked on the right. */
+.about-grid {
+  display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 52px; align-items: start;
+}
 
 .portrait { margin: 0; }
 .portrait-frame {
@@ -297,7 +301,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 .about-copy p { color: var(--bone-2); max-width: 64ch; }
 .about-ask { color: var(--bone) !important; border-left: 2px solid var(--cyan); padding-left: 16px; }
 
-.about-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; margin-top: 36px; align-items: start; }
+.about-cards { display: grid; grid-template-columns: 1fr; gap: 18px; align-items: start; }
 .mini-card { border: 1px solid var(--rule); border-radius: var(--r); padding: 22px; background: var(--ink); }
 html[data-theme="light"] .mini-card { background: var(--ink-2); }
 .mini-title { font-family: var(--display); font-size: 1.04rem; font-weight: 600; letter-spacing: -.02em; margin-bottom: 3px; }
@@ -502,6 +506,8 @@ body.is-ready .hero-rule { transform: scaleX(1); }
 /* ── responsive ─────────────────────────────────────────── */
 @media (max-width: 1000px) {
   .hero-intro { grid-template-columns: minmax(0, 1fr) 220px; gap: 36px; }
+  .about-grid { grid-template-columns: 1fr; gap: 36px; }
+  .about-cards { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
   .hero-grid { grid-template-columns: 1fr; gap: 16px; }
   .index a { grid-template-columns: minmax(0, 170px) minmax(0, 1fr); }
   .index-status { grid-column: 1 / -1; }

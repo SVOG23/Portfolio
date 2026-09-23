@@ -62,6 +62,9 @@ GitHub Pages.
 ## Editing
 
 - **Content**: inline in `index.html`; each project is one `<article class="project">`.
+- **After editing CSS or JS**: bump the `?v=` value on the `styles.css` and `main.js` links in
+  `index.html` (any new string works, such as today's date). Browsers cache these files, and a
+  visitor who gets new HTML with an old stylesheet sees a broken layout.
 - **Colour and type**: the `:root` and `html[data-theme="light"]` token blocks at the top of
   `assets/styles.css`.
 - **Adding a project**: copy an existing `<article class="project">`, give it a unique `id`, keep
