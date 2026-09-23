@@ -98,7 +98,7 @@
       <a href="#kivo">
         <span class="index-name">Kivo</span>
         <span class="index-desc">Rent sports gear from people nearby, by the hour</span>
-        <span class="index-status">Ready to launch</span>
+        <span class="index-status">Nearing App Store release</span>
       </a>
     </nav>
   </div>
@@ -142,9 +142,9 @@
           something goes wrong. Getting those right is what separates a demo from a product.
         </p>
         <p>
-          Before ALPHABYTE I built a system at CloudifyAI Solutions that helped a support team
-          answer customers faster, and I researched energy-efficient AI at Tech Mahindra's
-          Makers Lab. I also work daily with AI coding tools, which is how I ended up building
+          Before ALPHABYTE I prototyped a support-ticket recommender at CloudifyAI Solutions that
+          suggests fixes from similar past tickets, and I researched energy-efficient AI at Tech
+          Mahindra's Makers Lab. I also work daily with AI coding tools, which is how I ended up building
           one of my own.
         </p>
         <p class="about-ask">
@@ -156,8 +156,9 @@
           <div class="mini-card">
             <p class="label">Education</p>
             <p class="mini-title">B.S. Informatics <span>(Data Science)</span></p>
-            <p class="mini-sub">University of Washington · Seattle, WA</p>
+            <p class="mini-sub">University of Washington · Seattle, WA · Expected June 2027</p>
             <ul class="mini-list">
+              <li>GPA: 3.51 / 4.00</li>
               <li>Dean's List: 2024, 2025, 2026</li>
               <li>iStartup Lab Micro-Grant, 2026</li>
             </ul>
@@ -226,7 +227,7 @@
         <span class="jump jump-locked">Code kept private</span>
       </div>
 
-      <p class="project-desc">Vouchlist replaces the anonymous five-star review with a recommendation from someone in your circle. You find a plumber, a restaurant or a place to travel because a real person you know stood behind it. I designed and built the whole product and took it through both app store reviews.</p>
+      <p class="project-desc">Vouchlist replaces the anonymous five-star review with a recommendation from someone in your circle. You find a plumber, a restaurant or a place to travel because a real person you know stood behind it. I'm the sole engineer: I designed and built the whole product and took it through both app store reviews.</p>
 
       <div class="case" data-case>
         <div class="case-head">
@@ -236,13 +237,13 @@
         <div class="case-rule" aria-hidden="true"></div>
         <div class="case-body">
           <p class="case-problem">Online reviews are anonymous and easy to fake, so it's hard to know who is actually behind a rating. Meanwhile the people whose taste you genuinely trust (friends, neighbours, family) aren't the ones writing them.</p>
-          <p class="case-result">Live on the App Store and Google Play, covering home services, restaurants and travel. Friends are matched privately, so people can find who they know without handing over their contacts.</p>
+          <p class="case-result">Live on the App Store and Google Play with 76 users, covering home services, restaurants, bars and travel. Friends are matched privately, so people can find who they know without handing over their contacts. Scout, an AI assistant now in beta with testers, answers plain-English requests like “affordable 4+ star restaurants in Australia” using friends’ vouches, running on Apple’s on-device model.</p>
         </div>
       </div>
 
       <dl class="facts">
-        <div><dt>My role</dt><dd>Founder: design, product and engineering</dd></div>
-        <div><dt>Built with</dt><dd>TypeScript · React Native · Supabase · PostgreSQL</dd></div>
+        <div><dt>My role</dt><dd>Founder and sole engineer: design, product and engineering</dd></div>
+        <div><dt>Built with</dt><dd>TypeScript · React Native · Expo · Supabase · PostgreSQL · Twilio</dd></div>
       </dl>
     </article>
 
@@ -270,13 +271,13 @@
         <div class="case-rule" aria-hidden="true"></div>
         <div class="case-body">
           <p class="case-problem">Developers who train genuinely useful models have nowhere natural to sell them, and buyers have no safe way to pay for something they can't inspect first.</p>
-          <p class="case-result">Three ways to buy: outright, by subscription, or by bidding at auction. Payments, seller payouts and refunds are all handled automatically. The University of Washington backed it with an iStartup Lab Micro-Grant for market viability and engineering quality.</p>
+          <p class="case-result">Four ways to pay through Stripe: buy outright, lease, bid at auction, or subscribe to a seller. Sellers are paid out automatically through Stripe Connect. The University of Washington backed it with an iStartup Lab Micro-Grant for market viability and engineering quality.</p>
         </div>
       </div>
 
       <dl class="facts">
         <div><dt>My role</dt><dd>Founder: product and engineering</dd></div>
-        <div><dt>Built with</dt><dd>Next.js · TypeScript · Stripe · PostgreSQL</dd></div>
+        <div><dt>Built with</dt><dd>Next.js · TypeScript · Supabase · Stripe · PostgreSQL</dd></div>
       </dl>
     </article>
 
@@ -305,7 +306,7 @@
         <div class="case-rule" aria-hidden="true"></div>
         <div class="case-body">
           <p class="case-problem">An AI assistant following stale instructions confidently does the wrong thing, and nobody notices, because nothing ever checks whether those instructions are still true.</p>
-          <p class="case-result">Released free and open source for anyone to install. I tested it against 69 well-known open-source projects (Microsoft's VS Code and OpenAI's Codex among them) where it found instructions pointing at files that had been deleted or renamed. In testing it catches 99% of the problems it's designed to find.</p>
+          <p class="case-result">Published on npm for anyone to install. To measure accuracy I planted 356 known errors in real instruction files: it caught 354 (99.4%) and raised zero false alarms across 440 correct examples. I then ran it on 69 popular open-source projects and reported what it found; fixes have been merged into Microsoft's VS Code, PostHog, n8n and OpenSRE.</p>
         </div>
       </div>
 
@@ -319,7 +320,7 @@
       <header class="project-head">
         <h3 class="project-title">Kivo</h3>
         <div class="project-tags">
-          <span class="tag tag-build">Ready to launch</span>
+          <span class="tag tag-build">Nearing App Store release</span>
           <span class="tag">Marketplace</span>
         </div>
       </header>
@@ -339,7 +340,7 @@
         <div class="case-rule" aria-hidden="true"></div>
         <div class="case-body">
           <p class="case-problem">Trying a new sport means buying equipment you might use twice, while the gear other people already own sits unused in their garages.</p>
-          <p class="case-result">A complete marketplace: map search, hourly booking, in-person handover codes, automatic payment for the exact time used, and payouts to owners. Built and tested end to end.</p>
+          <p class="case-result">A complete marketplace: map search, hourly booking, in-person handover codes, automatic payment for the exact time used, and automatic payouts to owners through Stripe. Nearing its App Store release.</p>
         </div>
       </div>
 
@@ -364,13 +365,14 @@
       <li class="role reveal">
         <p class="role-date">Mar 2026 – Present</p>
         <div class="role-body">
-          <h3>Founder</h3>
+          <h3>Founder &amp; Software Engineer</h3>
           <p class="role-org">ALPHABYTE · Seattle, WA</p>
           <ul>
-            <li>Founded the company and shipped Vouchlist, a mobile app, to both the Apple App Store and Google Play.</li>
-            <li>Designed and built the product end to end: the app people use, the systems behind it, and the release process that gets updates out.</li>
-            <li>Built friend-matching that connects people privately, without the app ever holding a readable copy of anyone's contacts.</li>
-            <li>Work daily with AI coding tools to move faster on design, implementation and debugging.</li>
+            <li>Shipped Vouchlist, a friend-sourced local recommendations app, to the App Store and Google Play as sole engineer, reaching 76 users; built and submitted iOS and Android releases with Expo EAS.</li>
+            <li>Built Scout, an AI assistant in beta with testers, that answers plain-English requests with friends' vouches using Apple's on-device model, and only returns results the user has permission to see.</li>
+            <li>Protected user data with Supabase row-level security and SHA-256 contact hashing, so friends are matched without the backend holding readable contacts; added phone-number login with Twilio Verify.</li>
+            <li>Set up a CI/CD workflow with AI code review: a second agent reviews every pull request and either approves it or sends fixes back before merge.</li>
+            <li>Build every product by directing AI coding agents (Claude Code, Codex), owning product design, feature planning, testing and iteration.</li>
           </ul>
         </div>
       </li>
@@ -381,8 +383,8 @@
           <h3>Software Engineer Intern</h3>
           <p class="role-org">CloudifyAI Solutions, Inc. · Seattle, WA</p>
           <ul>
-            <li>Built and launched a system trained on 6,000+ past support tickets that suggests the right answer automatically, cutting response times and taking routine work off the support team.</li>
-            <li>Connected it to the tools the team already used, so suggestions reached customers and agents without anyone changing how they worked.</li>
+            <li>Prototyped a Python ticket recommender on about 2,500 support tickets: it cleans the text, turns each ticket into an embedding, and retrieves the five most similar past resolutions, improving on a TF-IDF baseline.</li>
+            <li>Built an n8n workflow that sent each incoming ticket to the recommender and emailed the suggested resolutions back to the customer.</li>
           </ul>
         </div>
       </li>
@@ -391,9 +393,9 @@
         <p class="role-date">Aug 2024 – Sep 2024</p>
         <div class="role-body">
           <h3>Machine Learning Research Intern</h3>
-          <p class="role-org">Tech Mahindra · Redmond, WA</p>
+          <p class="role-org">Tech Mahindra (Makers Lab) · Redmond, WA</p>
           <ul>
-            <li>Researched a class of AI models that mimics how the brain fires, as a more energy-efficient alternative to conventional approaches.</li>
+            <li>Researched spiking neural networks, AI models that mimic how the brain fires (rate and temporal coding, STDP learning), as an energy-efficient alternative to conventional approaches.</li>
             <li>Presented the findings to the Makers Lab AI team, weighing where the approach is genuinely worth using.</li>
           </ul>
         </div>
